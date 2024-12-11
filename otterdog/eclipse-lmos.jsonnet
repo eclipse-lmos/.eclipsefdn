@@ -17,4 +17,8 @@ orgs.newOrg('eclipse-lmos') {
   _repositories+:: [
     orgs.newRepo('.github')
   ],
+} + {
+  _repositories+:: [
+    orgs.newRepo('arc')
+  ],
 }
