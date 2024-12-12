@@ -3,7 +3,8 @@ local orgs = import 'vendor/otterdog-defaults/otterdog-defaults.libsonnet';
 orgs.newOrg('eclipse-lmos') {
   settings+: {
     description: "Eclipse LMOS",
-    has_discussions: true
+    has_discussions: true,
+    discussion_source_repository: "lmos-demo"
   },
   _repositories+:: [
     orgs.newRepo('.github') {
