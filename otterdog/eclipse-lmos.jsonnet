@@ -4,7 +4,7 @@ orgs.newOrg('eclipse-lmos') {
   settings+: {
     description: "Eclipse LMOS",
     has_discussions: true,
-    discussion_source_repository: "lmos-demo"
+    discussion_source_repository: "eclipse-lmos/lmos-demo"
   },
   _repositories+:: [
     orgs.newRepo('.github') {
