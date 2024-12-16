@@ -22,6 +22,35 @@ orgs.newOrg('eclipse-lmos') {
     has_discussions: true,
     discussion_source_repository: "eclipse-lmos/lmos-demo"
   },
+  secrets+: [
+    orgs.newOrgSecret('GPG_KEY_ID') {
+      value: "pass:bots/technology.lmos/gpg/key_id",
+    },
+    orgs.newOrgSecret('GPG_PASSPHRASE') {
+      value: "pass:bots/technology.lmos/gpg/passphrase",
+    },
+    orgs.newOrgSecret('GPG_PRIVATE_KEY') {
+      value: "pass:bots/technology.lmos/gpg/secret-subkeys.asc",
+    },
+    orgs.newOrgSecret('OSSRH_PASSWORD') {
+      value: "pass:bots/technology.lmos/oss.sonatype.org/gh-token-password",
+    },
+    orgs.newOrgSecret('OSSRH_USERNAME') {
+      value: "pass:bots/technology.lmos/oss.sonatype.org/gh-token-username",
+    },
+    orgs.newOrgSecret('PROJECTS_STORAGE_PRIVATE_KEY') {
+      value: "pass:bots/technology.lmos/projects-storage.eclipse.org/id_rsa",
+    },
+    orgs.newOrgSecret('PROJECTS_STORAGE_PASSPHRASE') {
+      value: "pass:bots/technology.lmos/projects-storage.eclipse.org/id_rsa.passphrase",
+    },
+    orgs.newOrgSecret('PROJECTS_STORAGE_PUBLIC_KEY') {
+      value: "pass:bots/technology.lmos/projects-storage.eclipse.org/id_rsa.pub",
+    },
+    orgs.newOrgSecret('PROJECTS_STORAGE_USERNAME') {
+      value: "pass:bots/technology.lmos/projects-storage.eclipse.org/username",
+    },
+  ],
   _repositories+:: [
     orgs.newRepo('.github') {
       has_wiki: false,
