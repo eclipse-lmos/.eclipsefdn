@@ -38,16 +38,16 @@ orgs.newOrg('eclipse-lmos') {
     orgs.newOrgSecret('OSSRH_USERNAME') {
       value: "pass:bots/technology.lmos/oss.sonatype.org/gh-token-username",
     },
-    orgs.newRepoSecret('PROJECTS_STORAGE_PRIVATE_KEY') {
+    orgs.newOrgSecret('PROJECTS_STORAGE_PRIVATE_KEY') {
       value: "pass:bots/technology.lmos/projects-storage.eclipse.org/id_rsa",
     },
-    orgs.newRepoSecret('PROJECTS_STORAGE_PASSPHRASE') {
+    orgs.newOrgSecret('PROJECTS_STORAGE_PASSPHRASE') {
       value: "pass:bots/technology.lmos/projects-storage.eclipse.org/id_rsa.passphrase",
     },
-    orgs.newRepoSecret('PROJECTS_STORAGE_PUBLIC_KEY') {
+    orgs.newOrgSecret('PROJECTS_STORAGE_PUBLIC_KEY') {
       value: "pass:bots/technology.lmos/projects-storage.eclipse.org/id_rsa.pub",
     },
-    orgs.newRepoSecret('PROJECTS_STORAGE_USERNAME') {
+    orgs.newOrgSecret('PROJECTS_STORAGE_USERNAME') {
       value: "pass:bots/technology.lmos/projects-storage.eclipse.org/username",
     },
   ],
