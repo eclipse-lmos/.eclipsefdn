@@ -1,7 +1,7 @@
 local orgs = import 'vendor/otterdog-defaults/otterdog-defaults.libsonnet';
 
-local customRuleset(name) = 
-  orgs.newRepoRuleset(name) {
+local defaultBranchRuleset() = 
+  orgs.newRepoRuleset("default") {
     include_refs+: [
       "~DEFAULT_BRANCH"
     ],
@@ -31,35 +31,35 @@ orgs.newOrg('eclipse-lmos') {
       has_wiki: false,
       has_discussions: true,
       rulesets: [
-        customRuleset("main")
+        defaultBranchRuleset()
       ],
     },
     orgs.newRepo('arc-spring-init') {
       description: "A demo project for the Arc Agent Framework",
       has_wiki: false,
       rulesets: [
-        customRuleset("main")
+        defaultBranchRuleset()
       ],
     },
     orgs.newRepo('arc-view') {
       description: "Arc View is a UI application for Arc agents",
       has_wiki: false,
       rulesets: [
-        customRuleset("main")
+        defaultBranchRuleset()
       ],
     },
     orgs.newRepo('lmos-router') {
       description: "Efficient Agent Routing with SOTA Language and Embedding Models",
       has_wiki: false,
       rulesets: [
-        customRuleset("main")
+        defaultBranchRuleset()
       ],
     },
     orgs.newRepo('lmos-operator') {
       description: "The LMOS Operator is a Kubernetes operator designed to dynamically resolve Channel requirements based on the capabilities of installed Agents within a Kubernetes cluster.",
       has_wiki: false,
       rulesets: [
-        customRuleset("main")
+        defaultBranchRuleset()
       ],
     },
     orgs.newRepo('lmos-runtime') {
@@ -67,7 +67,7 @@ orgs.newOrg('eclipse-lmos') {
       has_wiki: false,
       has_discussions: true,      
       rulesets: [
-        customRuleset("main")
+        defaultBranchRuleset()
       ],
     },
     orgs.newRepo('lmos-demo') {
@@ -75,14 +75,14 @@ orgs.newOrg('eclipse-lmos') {
       has_wiki: false,
       has_discussions: true,     
       rulesets: [
-        customRuleset("main")
+        defaultBranchRuleset()
       ],
     },
     orgs.newRepo('lmos-sample-agents') {
       description: "Sample agents for deploying to an LMOS instance",
       has_wiki: false,
       rulesets: [
-        customRuleset("main")
+        defaultBranchRuleset()
       ],
     },
     orgs.newRepo('website') {
@@ -93,7 +93,7 @@ orgs.newOrg('eclipse-lmos') {
       has_wiki: false,
       default_branch: "source",
       rulesets: [
-        customRuleset("source")
+        defaultBranchRuleset()
       ],
     },
   ],
