@@ -26,6 +26,9 @@ orgs.newOrg('eclipse-lmos') {
     orgs.newOrgSecret('GPG_KEY_ID') {
       value: "pass:bots/technology.lmos/gpg/key_id",
     },
+    orgs.newOrgSecret('GPG_SUBKEY_ID') {
+      value: "pass:bots/technology.lmos/gpg/subkey_id",
+    },
     orgs.newOrgSecret('GPG_PASSPHRASE') {
       value: "pass:bots/technology.lmos/gpg/passphrase",
     },
