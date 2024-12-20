@@ -16,7 +16,7 @@ local defaultBranchRuleset() =
     ],
   };
 
-orgs.newOrg('eclipse-lmos') {
+orgs.newOrg('technology.lmos', 'eclipse-lmos') {
   settings+: {
     description: "Eclipse LMOS",
     has_discussions: true,
