@@ -123,6 +123,7 @@ orgs.newOrg('technology.lmos', 'eclipse-lmos') {
       delete_branch_on_merge: false,
       description: "LMOS Website",
       has_wiki: false,
+      homepage: "https://eclipse.dev/lmos",
       default_branch: "source",
       rulesets: [
         defaultBranchRuleset()
