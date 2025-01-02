@@ -62,6 +62,15 @@ orgs.newOrg('technology.lmos', 'eclipse-lmos') {
       description: "The Arc project utilizes the power of Kotlin DSL and Kotlin Scripting to define a language optimized for building LLM-powered solutions.",
       has_wiki: false,
       has_discussions: true,
+      environments: [
+        orgs.newEnvironment('github-pages') {
+          branch_policies: [
+            "docs",
+            "main"
+          ],
+          deployment_branch_policy: "selected"
+        }
+      ],
       rulesets: [
         defaultBranchRuleset()
       ],
