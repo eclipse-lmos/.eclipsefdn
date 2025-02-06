@@ -117,6 +117,13 @@ orgs.newOrg('technology.lmos', 'eclipse-lmos') {
         defaultBranchRuleset()
       ],
     },
+    orgs.newRepo('lmos-cli') {
+      description: "The command line interface for LMOS",
+      has_wiki: false,
+      rulesets: [
+        defaultBranchRuleset()
+      ],
+    },
     orgs.newRepo('website') {
       allow_merge_commit: true,
       allow_update_branch: false,
