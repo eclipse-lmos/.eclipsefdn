@@ -95,7 +95,7 @@ orgs.newOrg('technology.lmos', 'eclipse-lmos') {
       ],
     },
     orgs.newRepo('lmos-kotlin-sdk') {
-      description: "The LMOS Kotlin SDK to devevlop WoT-enabled Agents.",
+      description: "The LMOS Kotlin SDK to develop WoT-enabled Agents.",
       has_wiki: false,
       has_discussions: true,      
       rulesets: [
