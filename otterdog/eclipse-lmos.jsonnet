@@ -13,6 +13,7 @@ local defaultBranchRuleset() =
     requires_linear_history: true,
     bypass_actors+: [
       "@eclipse-lmos/technology-lmos-project-leads",
+      "@eclipse-lmos/technology-lmos-project-committers",
     ],
   };
 
