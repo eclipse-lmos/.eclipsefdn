@@ -36,6 +36,9 @@ orgs.newOrg('technology.lmos', 'eclipse-lmos') {
     orgs.newOrgSecret('GPG_PRIVATE_KEY') {
       value: "pass:bots/technology.lmos/gpg/secret-subkeys.asc",
     },
+    orgs.newOrgSecret('LMOS_BOT_TOKEN') {
+      value: "pass:bots/technology.lmos/github.com/token-hd5700",
+    },
     orgs.newOrgSecret('OSSRH_PASSWORD') {
       value: "pass:bots/technology.lmos/oss.sonatype.org/gh-token-password",
     },
