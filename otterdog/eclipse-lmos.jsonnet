@@ -11,9 +11,13 @@ local defaultBranchRuleset() =
       requires_code_owner_review: true,
     },
     requires_linear_history: true,
+    bypass_pull_request_allowances: [
+      "@eclipse-lmos-bot",
+    ],
     bypass_actors+: [
       "@eclipse-lmos/technology-lmos-project-leads",
       "@eclipse-lmos/technology-lmos-committers",
+      "@eclipse-lmos-bot",
     ],
   };
 
