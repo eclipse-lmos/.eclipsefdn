@@ -14,7 +14,6 @@ local defaultBranchRuleset() =
     bypass_actors+: [
       "@eclipse-lmos/technology-lmos-project-leads",
       "@eclipse-lmos/technology-lmos-committers",
-      "@eclipse-lmos-bot",
     ],
   };
 
