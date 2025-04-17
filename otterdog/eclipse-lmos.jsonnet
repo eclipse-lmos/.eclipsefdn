@@ -105,6 +105,14 @@ orgs.newOrg('technology.lmos', 'eclipse-lmos') {
         defaultBranchRuleset()
       ],
     },
+    orgs.newRepo('lmos-kotlin-sdk-template') {
+      description: "Quick start template project for LMOS Kotlin SDK.",
+      has_wiki: false,
+      has_discussions: false,      
+      rulesets: [
+        defaultBranchRuleset()
+      ],
+    },
     orgs.newRepo('lmos-runtime') {
       description: "The LMOS Runtime facilitates dynamic agent routing and conversation handling in a multi-tenant, multi-channel environment.",
       has_wiki: false,
