@@ -155,5 +155,12 @@ orgs.newOrg('technology.lmos', 'eclipse-lmos') {
         defaultBranchRuleset()
       ],
     },
+    orgs.newRepo('lmos-starter') {
+      description: "For quickly generating agents",
+      has_wiki: false,
+      rulesets: [
+        defaultBranchRuleset()
+      ],
+    },
   ],
 }
