@@ -142,6 +142,14 @@ orgs.newOrg('technology.lmos', 'eclipse-lmos') {
       rulesets: [
         defaultBranchRuleset()
       ],
+      secrets+: [
+        orgs.newRepoSecret('LMOS_CLI_SECRET_KEY_NON_WINDOWS') {
+        value: "pass:bots/technology.lmos/lmos-cli/secret-key-non-windows",
+        },
+        orgs.newRepoSecret('LMOS_CLI_SECRET_KEY_WINDOWS') {
+        value: "pass:bots/technology.lmos/lmos-cli/secret-key-windows",
+        },
+      ],
     },
     orgs.newRepo('website') {
       allow_merge_commit: true,
