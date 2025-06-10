@@ -38,11 +38,11 @@ orgs.newOrg('technology.lmos', 'eclipse-lmos') {
     orgs.newOrgSecret('LMOS_BOT_TOKEN') {
       value: "pass:bots/technology.lmos/github.com/token-hd5700",
     },
-    orgs.newOrgSecret('OSSRH_PASSWORD') {
-      value: "pass:bots/technology.lmos/oss.sonatype.org/gh-token-password",
+    orgs.newOrgSecret('CENTRAL_SONATYPE_TOKEN_PASSWORD') {
+      value: "pass:bots/technology.lmos/central.sonatype.org/token-password",
     },
-    orgs.newOrgSecret('OSSRH_USERNAME') {
-      value: "pass:bots/technology.lmos/oss.sonatype.org/gh-token-username",
+    orgs.newOrgSecret('CENTRAL_SONATYPE_TOKEN_USERNAME') {
+      value: "pass:bots/technology.lmos/central.sonatype.org/token-username",
     },
     orgs.newOrgSecret('PROJECTS_STORAGE_PRIVATE_KEY') {
       value: "pass:bots/technology.lmos/projects-storage.eclipse.org/id_rsa",
