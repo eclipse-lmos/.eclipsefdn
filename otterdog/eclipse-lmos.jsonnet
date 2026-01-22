@@ -62,6 +62,7 @@ orgs.newOrg('technology.lmos', 'eclipse-lmos') {
       has_wiki: false,
     },
     orgs.newRepo('arc') {
+      allow_auto_merge: true,
       description: "The Arc project utilizes the power of Kotlin DSL and Kotlin Scripting to define a language optimized for building LLM-powered solutions.",
       has_wiki: false,
       has_discussions: true,
@@ -70,6 +71,7 @@ orgs.newOrg('technology.lmos', 'eclipse-lmos') {
       ],
     },
     orgs.newRepo('arc-spring-init') {
+      allow_auto_merge: true,
       description: "A demo project for the Arc Agent Framework",
       has_wiki: false,
       rulesets: [
@@ -77,6 +79,7 @@ orgs.newOrg('technology.lmos', 'eclipse-lmos') {
       ],
     },
     orgs.newRepo('arc-view') {
+      allow_auto_merge: true,
       description: "Arc View is a UI application for Arc agents",
       has_wiki: false,
       rulesets: [
@@ -84,6 +87,7 @@ orgs.newOrg('technology.lmos', 'eclipse-lmos') {
       ],
     },
     orgs.newRepo('lmos-router') {
+      allow_auto_merge: true,
       description: "Efficient Agent Routing with SOTA Language and Embedding Models",
       has_wiki: false,
       rulesets: [
@@ -91,6 +95,7 @@ orgs.newOrg('technology.lmos', 'eclipse-lmos') {
       ],
     },
     orgs.newRepo('lmos-operator') {
+      allow_auto_merge: true,
       description: "The LMOS Operator is a Kubernetes operator designed to dynamically resolve Channel requirements based on the capabilities of installed Agents within a Kubernetes cluster.",
       has_wiki: false,
       rulesets: [
@@ -114,6 +119,7 @@ orgs.newOrg('technology.lmos', 'eclipse-lmos') {
       ],
     },
     orgs.newRepo('lmos-runtime') {
+      allow_auto_merge: true,
       description: "The LMOS Runtime facilitates dynamic agent routing and conversation handling in a multi-tenant, multi-channel environment.",
       has_wiki: false,
       has_discussions: true,      
