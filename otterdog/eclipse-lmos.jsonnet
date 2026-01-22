@@ -148,6 +148,14 @@ orgs.newOrg('technology.lmos', 'eclipse-lmos') {
       rulesets: [
         defaultBranchRuleset()
       ],
+      secrets+: [
+        orgs.newRepoSecret('LMOS_CLI_SECRET_KEY_NON_WINDOWS') {
+        value: "pass:bots/technology.lmos/lmos-cli/secret-key-non-windows",
+        },
+        orgs.newRepoSecret('LMOS_CLI_SECRET_KEY_WINDOWS') {
+        value: "pass:bots/technology.lmos/lmos-cli/secret-key-windows",
+        },
+      ],
     },
     orgs.newRepo('website') {
       allow_merge_commit: true,
@@ -157,6 +165,13 @@ orgs.newOrg('technology.lmos', 'eclipse-lmos') {
       has_wiki: false,
       homepage: "https://eclipse.dev/lmos",
       default_branch: "source",
+      rulesets: [
+        defaultBranchRuleset()
+      ],
+    },
+    orgs.newRepo('lmos-starter') {
+      description: "For quickly generating agents",
+      has_wiki: false,
       rulesets: [
         defaultBranchRuleset()
       ],
