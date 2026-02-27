@@ -149,6 +149,15 @@ orgs.newOrg('technology.lmos', 'eclipse-lmos') {
         defaultBranchRuleset()
       ],
     },
+    orgs.newRepo('adl') {
+      description: "The Agent Definition Language",
+      has_wiki: false,
+      allow_merge_commit: true,
+      rulesets: [
+        defaultBranchRuleset()
+      ],
+      has_discussions: true,
+    },
     orgs.newRepo('website') {
       allow_merge_commit: true,
       allow_update_branch: false,
